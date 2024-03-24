@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Route
+metadata:
+  name: demo-api-route
+  namespace: default
+spec:
+  traffic:
+    - revisionName: demo-api-00001
+      percent: 100 # All traffic goes to this revision
