@@ -5,9 +5,9 @@ metadata:
   namespace: default
 spec:
   traffic:
-    - revisionName: demo-api-00002
-      percent: 100 # All traffic goes to this revision
+    - revisionName: demo-api-00004
+      percent: 50 # All traffic goes to this revision
       tag: v2
-    - revisionName: demo-api-00003
-      percent: 0 # 0% of traffic routed to the second revision
+    - revisionName: demo-api-00005
+      percent: 50 # 0% of traffic routed to the second revision
       tag: v3 # A named route
